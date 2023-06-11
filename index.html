@@ -7,17 +7,22 @@
     <meta charset="ISO-8859-1 ">
     <link rel="shortcut icon" href="./calculadora.png">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Bienvenido a tu calculadora en linea</h1>
     <p>Escribe tus numeros abajo</p>
     <hr>
-    <input type="number" id="nm1">
-    <input type="text" id="ops"
-    
-    >
-    <input type="number" id="nm2">
-   <link rel="stylesheet" href="index.css">
-   <link rel="script" href="index.php">
+    <input type="number" required="true" id="nm1">
+    <select name="select">
+        <option value="+" id="sum">Sumar</option>
+        <option value="-" id="rest">Restar</option>
+        <option value="*" id="mult">Multiplicar</option>
+        <option value="/" id="ent">Dividir</option>
+      </select>
+    <input type="number" required="true" id="nm2">
+    <button value="Resultado" id="btn"></button>
+    <p id="resu">resultado</p>
+    <link rel="script" href="scripts.js">
 </body>
 </html>
